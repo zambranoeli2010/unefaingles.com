@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNEFA Agenda Estudiantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+    <div class="page">
+        <div class="page__background" aria-hidden="true">
+            <div class="page__gradient"></div>
+            <div class="page__orb page__orb--one"></div>
+            <div class="page__orb page__orb--two"></div>
+            <div class="page__orb page__orb--three"></div>
+            <div class="page__rays"></div>
+            <div class="page__stickers">
+                <span class="page__sticker page__sticker--book"></span>
+                <span class="page__sticker page__sticker--pencil"></span>
+                <span class="page__sticker page__sticker--cap"></span>
+                <span class="page__sticker page__sticker--ruler"></span>
+            </div>
+        </div>
+        <div class="page__content">
+            <header class="hero">
+                <div class="hero__background" aria-hidden="true">
+                    <div class="hero__gradient"></div>
+                    <div class="hero__orb hero__orb--one"></div>
+                    <div class="hero__orb hero__orb--two"></div>
+                    <div class="hero__rays"></div>
+                </div>
+                <div class="hero__content">
+                    <div class="brand" data-animate="fade-right">
+                        <div class="logo-frame" aria-hidden="true">
+                            <img src="assets/escudounefa.gif" alt="Escudo oficial UNEFA" class="brand-logo">
+                        </div>
+                        <div>
+                            <span class="hero__eyebrow">UNEFA Stack</span>
+                            <h1 class="hero__title">Presentamos la nueva plataforma digital UNEFA: web brillante y futura app móvil</h1>
+                            <p class="hero__subtitle">Cuando busques UNEFA Stack encontrarás una experiencia que reúne organización académica, comunidad estudiantil y la evolución hacia nuestra próxima aplicación móvil.</p>
+                        </div>
+                    </div>
+                    <div class="hero__cta" data-animate="fade-up">
+                        <button id="quickStart" class="btn btn--primary">Descubrir herramientas</button>
+                        <a href="#auth" class="btn btn--ghost">Explorar acceso</a>
+                    </div>
+                    <ul class="hero__highlights" data-animate="fade-up" data-animate-delay="180">
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon" aria-hidden="true"></span>
+                            <div>
+                                <h4>Experiencia universitaria</h4>
+                                <p>Tableros estratégicos, métricas en tiempo real y enfoque ejecutivo para avanzar tu semestre.</p>
+                            </div>
+                        </li>
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon" aria-hidden="true"></span>
+                            <div>
+                                <h4>Seguridad y respaldo</h4>
+                                <p>Tokens cifrados, historial sincronizado y horario inteligente con notificaciones guiadas.</p>
+                            </div>
+                        </li>
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon" aria-hidden="true"></span>
+                            <div>
+                                <h4>Operativo</h4>
+                                <p>Sistema operativo eficiente y confiable para gestionar tus actividades académicas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="hero__metrics" data-animate="fade-up" data-animate-delay="150">
+                        <article class="metric">
+                            <span class="metric__label">Recordatorios generados</span>
+                            <span class="metric__value" data-count="148" data-suffix="">0</span>
+                        </article>
+                        <article class="metric">
+                            <span class="metric__label">Tareas con evidencia</span>
+                            <span class="metric__value" data-count="86" data-suffix="">0</span>
+                        </article>
+                        <article class="metric">
+                            <span class="metric__label">Promedio de enfoque</span>
+                            <span class="metric__value" data-count="95" data-suffix="%">0</span>
+                        </article>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="main__grid main__grid--intro">
+                    <section class="panel panel--glass overview" id="presentacion" data-animate="fade-up" data-animate-delay="60">
+                        <div class="overview__header">
+                            <h2>UNEFA Stack: plataforma web hoy, app móvil mañana</h2>
+                            <p>Centralizamos tus entregas, tus metas y la cultura universitaria en un mismo espacio que pronto vivirás también en tu teléfono. Esta experiencia aesthetic destaca cada detalle para motivar tu disciplina.</p>
+                        </div>
+                        <div class="overview__grid" data-animate="fade-up" data-animate-delay="120">
+                            <article class="overview-card">
+                                <h3>¿Quiénes somos?</h3>
+                                <p>Estudiantes de la UNEFA impulsando una suite académica oficial que moderniza procesos y celebra nuestra identidad.</p>
+                            </article>
+                            <article class="overview-card">
+                                <h3>Problemas que resolvemos</h3>
+                                <p>Desorden en tareas, falta de evidencias, recordatorios difusos y ausencia de un hub digital confiable.</p>
+                            </article>
+                            <article class="overview-card">
+                                <h3>Finalidad</h3>
+                                <p>Guiarte desde el registro hasta la entrega perfecta con seguimiento visual, métricas claras y respaldo de control de estudios.</p>
+                            </article>
+                            <article class="overview-card">
+                                <h3>Enfoque</h3>
+                                <p>Experiencia centrada en estudiantes UNEFA, datos seguros en el navegador y evolución constante hacia experiencias móviles y colaborativas.</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="panel panel--glass team" id="equipo" data-animate="fade-up" data-animate-delay="140">
+                        <div class="team__header">
+                            <h2>Nuestro equipo creador</h2>
+                            <p>La visión UNEFA Stack nace del trabajo apasionado de estudiantes que combinan ingeniería, diseño y comunidad para entregarte una plataforma única.</p>
+                        </div>
+                        <ul class="team__list" data-animate="fade-up" data-animate-delay="180">
+                            <li class="team__member team__member--lead">
+                                <div class="team__badge" aria-hidden="true">01</div>
+                                <div class="team__content">
+                                    <h3 class="team__name">Eliezer Zambrano</h3>
+                                    <p class="team__title">Ingeniero en Sistemas</p>
+                                    <p class="team__role" aria-live="polite">
+                                        <span class="team__role-prefix">Especialidades:</span>
+                                        <span class="team__typewriter">
+                                            <span class="team__typewriter-text" data-role-rotator data-roles='["Programador","Full Stack","Community Manager","Desarrollador Frontend","Diseñador Gráfico"]'>Programador</span>
+                                            <span class="team__cursor" data-rotator-cursor aria-hidden="true"></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__badge" aria-hidden="true">02</div>
+                                <div class="team__content">
+                                    <h3 class="team__name">Marianne Zambrano</h3>
+                                    <p class="team__title team__title--neon">Ingeniera en Sistemas</p>
+                                    <p class="team__note">Coordina la coherencia académica y refuerza la arquitectura de datos que soporta UNEFA Stack.</p>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__badge" aria-hidden="true">03</div>
+                                <div class="team__content">
+                                    <h3 class="team__name">Keilyn Matos</h3>
+                                    <p class="team__title team__title--neon">Ingeniera en Sistemas</p>
+                                    <p class="team__note">Aporta perspectiva estudiantil para asegurar que cada módulo responda a las necesidades reales de la comunidad.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <section class="panel panel--glass plan" id="plan" data-animate="fade-up" data-animate-delay="160">
+                    <div class="plan__badge">Plan mensual UNEFA Stack</div>
+                    <div class="plan__content">
+                        <div>
+                            <h2>Impulsa tu semestre con funciones premium</h2>
+                            <p>Accede a reportes avanzados, recordatorios ilimitados y prioridad en sincronizaciones Classroom. Diseñado para quienes quieren disciplina ejecutiva todo el mes.</p>
+                        </div>
+                        <div class="plan__price">
+                            <span class="plan__price-amount">$8.99</span>
+                            <span class="plan__price-note">mensual</span>
+                        </div>
+                    </div>
+                    <ul class="plan__features">
+                        <li>Paneles con métricas extendidas y exportación.</li>
+                        <li>Sincronización prioritaria con Google Classroom.</li>
+                        <li>Soporte directo con el equipo UNEFA Stack.</li>
+                    </ul>
+                    <button type="button" id="planCheckout" class="btn btn--primary plan__cta">Comprar acceso mensual</button>
+                </section>
+
+                <section class="panel panel--glass payments" id="payments" data-animate="fade-up" data-animate-delay="180">
+                    <div class="panel__header">
+                        <h2>Selecciona tu método de pago</h2>
+                        <p>Pagos seguros gestionados por UNEFA Stack a través de aliados oficiales.</p>
+                    </div>
+                    <ul class="payments__list">
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--paypal" aria-hidden="true"></span>
+                            <div>
+                                <h3>PayPal</h3>
+                                <p>Procesamiento internacional instantáneo.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con PayPal">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--zinli" aria-hidden="true"></span>
+                            <div>
+                                <h3>Zinli</h3>
+                                <p>Billetera digital en dólares sin comisiones adicionales.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con Zinli">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--binance" aria-hidden="true"></span>
+                            <div>
+                                <h3>Binance Pay</h3>
+                                <p>Pagos con cripto al instante, reportados en dólares.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con Binance Pay">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--pagomovil" aria-hidden="true"></span>
+                            <div>
+                                <h3>Pago Móvil</h3>
+                                <p>Transferencia inmediata en bolívares con confirmación automática.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con Pago Móvil">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--tarjeta" aria-hidden="true"></span>
+                            <div>
+                                <h3>Tarjeta de crédito</h3>
+                                <p>Visa, Mastercard y American Express habilitadas.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con tarjeta de crédito">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--payoneer" aria-hidden="true"></span>
+                            <div>
+                                <h3>Payoneer</h3>
+                                <p>Pagos empresariales y retiros a bancos aliados.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con Payoneer">Pagar</a>
+                        </li>
+                        <li class="payments__method">
+                            <span class="payments__logo payments__logo--zelle" aria-hidden="true"></span>
+                            <div>
+                                <h3>Zelle</h3>
+                                <p>Transferencia entre cuentas estadounidenses.</p>
+                            </div>
+                            <a class="btn btn--ghost" href="#" aria-label="Pagar con Zelle">Pagar</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="panel panel--split panel--glass auth" id="auth" data-animate="fade-up" data-animate-delay="120">
+                    <div>
+                        <div class="panel__header">
+                            <h2>Inicia sesión</h2>
+                            <p>Accede a todas las herramientas UNEFA Stack con tu usuario y contraseña.</p>
+                        </div>
+                        <div class="auth__toggle">
+                            <button type="button" id="loginToggle" class="btn btn--primary auth__toggle-button" data-open-label="Iniciar sesión" data-close-label="Ocultar inicio de sesión" aria-expanded="false" aria-controls="loginPanel">Iniciar sesión</button>
+                        </div>
+                        <div id="loginPanel" class="auth__panel" hidden>
+                            <form id="loginForm" class="form-grid" autocomplete="off">
+                                <label class="field">
+                                    <span>Usuario</span>
+                                    <input type="text" id="loginUsername" name="loginUsername" placeholder="Tu usuario UNEFA Stack" required>
+                                </label>
+                                <label class="field">
+                                    <span>Contraseña</span>
+                                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Ingresa tu contraseña" required>
+                                </label>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn--primary">Iniciar sesión</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel__header">
+                            <h2>Regístrate</h2>
+                            <p>Crea tu cuenta para guardar actividades, evidencias y tus métricas personalizadas.</p>
+                        </div>
+                        <div class="auth__toggle">
+                            <button type="button" id="registerToggle" class="btn btn--ghost auth__toggle-button" data-open-label="Regístrate" data-close-label="Ocultar registro" aria-expanded="false" aria-controls="registerPanel">Regístrate</button>
+                        </div>
+                        <div id="registerPanel" class="auth__panel" hidden>
+                            <form id="registerForm" class="form-grid" autocomplete="on">
+                                <label class="field">
+                                    <span>Nombres</span>
+                                    <input type="text" id="registerFirstName" name="registerFirstName" placeholder="Ej. María Alejandra" required>
+                                </label>
+                                <label class="field">
+                                    <span>Apellidos</span>
+                                    <input type="text" id="registerLastName" name="registerLastName" placeholder="Ej. González Pérez" required>
+                                </label>
+                                <label class="field">
+                                    <span>Semestre que cursa</span>
+                                    <input type="text" id="registerSemester" name="registerSemester" placeholder="Ej. 5to semestre" required>
+                                </label>
+                                <label class="field">
+                                    <span>Cédula de identidad</span>
+                                    <input type="text" id="registerId" name="registerId" placeholder="V-12345678" pattern="[VE]-?[0-9]{5,10}" required>
+                                </label>
+                                <div class="field field--full field--schedule">
+                                    <span class="field__label">Horario de clases (opcional)</span>
+                                    <div id="scheduleBuilder" class="schedule-builder" role="grid" aria-label="Horario semanal de clases"></div>
+                                    <small class="input-hint">Personaliza horas y materias para que UNEFA Stack te recuerde qué cursas cada día.</small>
+                                </div>
+                                <label class="field">
+                                    <span>Número de teléfono</span>
+                                    <input type="tel" id="registerPhone" name="registerPhone" placeholder="0414-0000000" required>
+                                </label>
+                                <label class="field">
+                                    <span>Correo electrónico</span>
+                                    <input type="email" id="registerEmail" name="registerEmail" placeholder="nombre.apellido@email.com" required>
+                                </label>
+                                <label class="field">
+                                    <span>Nombre de usuario</span>
+                                    <input type="text" id="registerUsername" name="registerUsername" placeholder="Crea tu usuario" required>
+                                </label>
+                                <label class="field">
+                                    <span>Contraseña</span>
+                                    <input type="password" id="registerPassword" name="registerPassword" placeholder="Mínimo 6 caracteres" minlength="6" required>
+                                </label>
+                                <label class="field">
+                                    <span>Confirma tu contraseña</span>
+                                    <input type="password" id="registerPasswordConfirm" name="registerPasswordConfirm" placeholder="Repite tu contraseña" minlength="6" required>
+                                </label>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn--primary">Crear cuenta</button>
+                                    <button type="reset" class="btn btn--soft">Limpiar formulario</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="workspace" class="workspace" hidden>
+                    <div class="workspace__actions">
+                        <button type="button" id="logoutButton" class="btn btn--ghost">Cerrar sesión</button>
+                    </div>
+                    <div class="workspace__grid">
+                        <section class="panel panel--glass" id="perfil" data-animate="fade-up">
+                            <div class="panel__header">
+                                <h2>Registro del estudiante</h2>
+                                <p>Completa tus datos para personalizar recordatorios y sincronizar tus tareas.</p>
+                            </div>
+                            <form id="studentForm" class="form-grid" autocomplete="on">
+                                <label class="field">
+                                    <span>Nombre completo</span>
+                                    <input type="text" id="studentName" name="studentName" placeholder="Ej. María González" required>
+                                </label>
+                                <label class="field">
+                                    <span>Cédula de identidad</span>
+                                    <input type="text" id="studentId" name="studentId" placeholder="V-12345678" pattern="[VE]-?[0-9]{5,10}" required>
+                                </label>
+                                <label class="field">
+                                    <span>Número celular</span>
+                                    <input type="tel" id="studentPhone" name="studentPhone" placeholder="0414-0000000" required>
+                                </label>
+                                <label class="field">
+                                    <span>Correo Gmail</span>
+                                    <input type="email" id="studentEmail" name="studentEmail" placeholder="nombre.apellido@gmail.com" required>
+                                </label>
+                                <label class="field field--full">
+                                    <span>Objetivo académico principal</span>
+                                    <input type="text" id="studentGoal" name="studentGoal" placeholder="Aprobar todo el semestre con promedio 18+">
+                                </label>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn--primary">Guardar perfil</button>
+                                    <button type="button" id="clearProfile" class="btn btn--soft">Reiniciar perfil</button>
+                                </div>
+                            </form>
+                            <div id="profileSummary" class="profile-summary" hidden>
+                                <h3>Perfil activo</h3>
+                                <dl>
+                                    <div>
+                                        <dt>Estudiante</dt>
+                                        <dd id="summaryName">—</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Objetivo</dt>
+                                        <dd id="summaryGoal">—</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Próxima meta</dt>
+                                        <dd id="summaryNext">Configura tu primera actividad para ver recordatorios.</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </section>
+
+                        <section class="panel panel--glass classroom" id="classroom" data-animate="fade-up" data-animate-delay="100">
+                            <div class="panel__header">
+                                <h2>Google Classroom</h2>
+                                <p>Conecta tu cuenta para importar cursos y actividades sin modificar tu Classroom original.</p>
+                            </div>
+                            <div class="classroom__cta">
+                                <button type="button" id="classroomSync" class="btn btn--primary">Conectar Classroom</button>
+                                <p class="classroom__status" id="classroomStatus">Autoriza tu cuenta UNEFA en Google para sincronizar.</p>
+                            </div>
+                            <div class="classroom__body" id="classroomContent" hidden>
+                                <div class="classroom__meta">
+                                    <span>Cuenta: <strong id="classroomAccount">—</strong></span>
+                                    <span>Sincronizado: <strong id="classroomLastSync">—</strong></span>
+                                    <button type="button" id="classroomResync" class="btn btn--soft">Actualizar datos</button>
+                                </div>
+                                <ul class="classroom__courses" id="classroomCourses" aria-live="polite"></ul>
+                            </div>
+                            <p class="classroom__note">UNEFA Stack mantiene los datos en modo lectura; no editamos ni eliminamos información en Google Classroom.</p>
+                        </section>
+
+                        <section class="panel panel--glass" id="agenda" data-animate="fade-up" data-animate-delay="120">
+                            <div class="panel__header">
+                                <h2>Agenda tu actividad</h2>
+                                <p>Registra materias, actividades y adjunta evidencias para respaldar tus entregas en coordinación y control de estudios.</p>
+                            </div>
+                            <form id="taskForm" class="form-grid" autocomplete="off">
+                                <label class="field">
+                                    <span>Materia</span>
+                                    <input type="text" id="subject" name="subject" placeholder="Inglés I" required>
+                                </label>
+                                <label class="field">
+                                    <span>Actividad</span>
+                                    <input type="text" id="activity" name="activity" placeholder="Sales Pitch Poster" required>
+                                </label>
+                                <label class="field">
+                                    <span>Fecha límite</span>
+                                    <input type="date" id="dueDate" name="dueDate" required>
+                                </label>
+                                <label class="field">
+                                    <span>Hora límite</span>
+                                    <input type="time" id="dueTime" name="dueTime">
+                                </label>
+                                <label class="field">
+                                    <span>Prioridad</span>
+                                    <select id="priority" name="priority">
+                                        <option value="alta">Alta</option>
+                                        <option value="media" selected>Media</option>
+                                        <option value="baja">Baja</option>
+                                    </select>
+                                </label>
+                                <label class="field field--full">
+                                    <span>Notas adicionales</span>
+                                    <textarea id="notes" name="notes" rows="3" placeholder="Incluir guion en inglés y práctica de 10 minutos"></textarea>
+                                </label>
+                                <label class="field field--full field--file">
+                                    <span>Adjuntar evidencia (PDF, imagen, enlaces)</span>
+                                    <input type="file" id="attachment" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.docx,.pptx,.zip" multiple>
+                                    <small class="input-hint">Los archivos se guardan localmente en tu navegador para acceder sin conexión.</small>
+                                </label>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn--primary">Guardar actividad</button>
+                                    <button type="button" id="exportData" class="btn btn--ghost">Exportar agenda</button>
+                                </div>
+                            </form>
+
+                            <div class="upcoming" id="upcomingReminder" hidden data-animate="fade-up" data-animate-delay="160">
+                                <h3>Próximo recordatorio</h3>
+                                <p><span id="upcomingTitle"></span> vence en <strong id="upcomingCountdown"></strong>.</p>
+                            </div>
+
+                            <div class="task-board" data-animate="fade-up" data-animate-delay="200">
+                                <header class="task-board__header">
+                                    <h3>Actividades programadas</h3>
+                                    <div class="filters">
+                                        <label class="field">
+                                            <span>Filtrar por estado</span>
+                                            <select id="statusFilter">
+                                                <option value="todas" selected>Todas</option>
+                                                <option value="pendiente">Pendientes</option>
+                                                <option value="completada">Completadas</option>
+                                            </select>
+                                        </label>
+                                        <label class="field">
+                                            <span>Buscar</span>
+                                            <input type="search" id="searchTask" placeholder="Filtra por materia o actividad">
+                                        </label>
+                                        <button type="button" id="clearAgenda" class="btn btn--soft">Limpiar agenda</button>
+                                    </div>
+                                </header>
+                                <ul id="taskList" class="task-list" aria-live="polite"></ul>
+                            </div>
+                        </section>
+
+                        <section class="panel panel--split panel--glass" id="insights" data-animate="fade-up" data-animate-delay="140">
+                            <div>
+                                <h2>Panel de foco</h2>
+                                <p>Visualiza tu distribución de prioridades y mantente al día con tus entregas.</p>
+                                <div class="stats" id="stats">
+                                    <article class="stat">
+                                        <h3>Total de actividades</h3>
+                                        <p id="statTotal">0</p>
+                                    </article>
+                                    <article class="stat">
+                                        <h3>Por vencer en 48h</h3>
+                                        <p id="statSoon">0</p>
+                                    </article>
+                                    <article class="stat">
+                                        <h3>Entregas completadas</h3>
+                                        <p id="statDone">0</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Consejos express</h2>
+                                <ul class="tips" id="tipsList">
+                                    <li>Bloquea 25 minutos para ensayar tu pitch y graba tu progreso.</li>
+                                    <li>Sube capturas o PDF al guardar para tener evidencia frente a control de estudios.</li>
+                                    <li>Usa tu objetivo académico como motivación en cada recordatorio.</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <p>Desarrollado por estudiantes UNEFA | Sigue organizando tus entregas con disciplina.</p>
+                <div class="footer__actions">
+                    <a href="#presentacion" class="btn btn--primary">Volver arriba</a>
+                </div>
+            </footer>
+
+            <template id="taskTemplate">
+                <li class="task" data-status="pendiente">
+                    <div class="task__badge"></div>
+                    <div class="task__body">
+                        <header>
+                            <h4 class="task__title"></h4>
+                            <div class="task__meta"></div>
+                        </header>
+                        <p class="task__notes"></p>
+                        <ul class="task__attachments"></ul>
+                    </div>
+                    <div class="task__actions">
+                        <button class="btn btn--primary mark-complete">Marcar completa</button>
+                        <button class="btn btn--soft revert-status" hidden>Restaurar</button>
+                        <button class="btn btn--ghost delete-task">Eliminar</button>
+                    </div>
+                </li>
+            </template>
+
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
